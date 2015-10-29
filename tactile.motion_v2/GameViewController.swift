@@ -11,6 +11,19 @@ import SpriteKit
 
 class GameViewController: UIViewController {
    
+   var manual_IP: String = "" {
+      didSet {
+         
+      }
+   }
+   
+   var manual_Port: String = "" {
+      didSet {
+         
+      }
+   }
+
+   
    override func viewDidLoad() {
       super.viewDidLoad()
       
@@ -25,6 +38,8 @@ class GameViewController: UIViewController {
       
       /* Set the scale mode to scale to fit the window */
       scene.scaleMode = .AspectFill
+      scene.manual_IP = manual_IP
+      scene.manual_Port = manual_Port
       
       skView.presentScene(scene)
       

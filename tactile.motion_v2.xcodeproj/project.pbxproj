@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F977C0F1BDF74300038A342 /* libVVBasics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F977BFE1BDF737E0038A342 /* libVVBasics.a */; };
+		4F977C101BDF74300038A342 /* libVVOSC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F977C001BDF737E0038A342 /* libVVOSC.a */; };
 		4F9B45801BD604A000105CD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B457F1BD604A000105CD5 /* AppDelegate.swift */; };
 		4F9B45821BD604A000105CD5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B45811BD604A000105CD5 /* GameScene.sks */; };
 		4F9B45841BD604A000105CD5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B45831BD604A000105CD5 /* GameScene.swift */; };
@@ -16,9 +18,171 @@
 		4F9B458E1BD604A100105CD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F9B458C1BD604A100105CD5 /* LaunchScreen.storyboard */; };
 		4F9B45991BD604A300105CD5 /* tactile_motion_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B45981BD604A300105CD5 /* tactile_motion_v2Tests.swift */; };
 		4F9B45A41BD604A300105CD5 /* tactile_motion_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B45A31BD604A300105CD5 /* tactile_motion_v2UITests.swift */; };
+		4FB8CD581BE1AD58002AC6DF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8CD571BE1AD58002AC6DF /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4F977BE11BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 961EA8ED100E8565007E6C25;
+			remoteInfo = VVBasics;
+		};
+		4F977BE31BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96C8073A19817C1600FA7825;
+			remoteInfo = VVBufferPool;
+		};
+		4F977BE51BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96C8071219817BFE00FA7825;
+			remoteInfo = DDMathParser;
+		};
+		4F977BE71BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96C8072619817C0A00FA7825;
+			remoteInfo = JSONKit;
+		};
+		4F977BE91BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 964FF27D1981B5AF00CCC808;
+			remoteInfo = VVISFKit;
+		};
+		4F977BEB1BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96B06C1C18BE0ECF000A921C;
+			remoteInfo = VVUIToolbox;
+		};
+		4F977BED1BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 961745F4100F86B400FB60E6;
+			remoteInfo = VVMIDI;
+		};
+		4F977BEF1BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9628D0C5100E89F700C3944E;
+			remoteInfo = VVOSC;
+		};
+		4F977BF11BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 968FAA86108B6141000E470D;
+			remoteInfo = CrashReporterTestApp;
+		};
+		4F977BF31BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9656D900100F89BA0064EEA6;
+			remoteInfo = MIDITestApp;
+		};
+		4F977BF51BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9628D179100E8B4D00C3944E;
+			remoteInfo = OSCTestApp;
+		};
+		4F977BF71BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96B49302106AEB4C008FB26E;
+			remoteInfo = MIDIviaOSC;
+		};
+		4F977BF91BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 966CCBD81431EFB9006D580F;
+			remoteInfo = OSCQueryTest;
+		};
+		4F977BFB1BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96ACD7211706416300138AE6;
+			remoteInfo = OSCPingTester;
+		};
+		4F977BFD1BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96C18C2D185A1A740082DE35;
+			remoteInfo = VVBasicsStatic;
+		};
+		4F977BFF1BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96C18C3E185A1A7D0082DE35;
+			remoteInfo = VVOSCStatic;
+		};
+		4F977C011BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1A6F726619033A9D00A6FBAD;
+			remoteInfo = VVUIToolboxStatic;
+		};
+		4F977C031BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 965C1CAC1983BE7D00111741;
+			remoteInfo = "GLScene Test App";
+		};
+		4F977C051BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 965C1CC71983BE9A00111741;
+			remoteInfo = "QCGLScene Test App";
+		};
+		4F977C071BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 965C1CE21983BEA200111741;
+			remoteInfo = "CIGLScene Test App";
+		};
+		4F977C091BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 965C1CFD198403C300111741;
+			remoteInfo = "ISFGLScene Test App";
+		};
+		4F977C0B1BDF737E0038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 96140109198AD46D00335292;
+			remoteInfo = "QT and Hap Test App";
+		};
+		4F977C0D1BDF74100038A342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 968A7EEB185BA3100075DEB1;
+			remoteInfo = "Build iOS static libs";
+		};
 		4F9B45951BD604A200105CD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4F9B45741BD6049E00105CD5 /* Project object */;
@@ -36,6 +200,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VVOpenSource.xcodeproj; path = "../../vvopensource-master/VVOpenSource.xcodeproj"; sourceTree = "<group>"; };
+		4F977C111BDF74ED0038A342 /* tactile.motion_v2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tactile.motion_v2-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F9B457C1BD604A000105CD5 /* tactile.motion_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tactile.motion_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9B457F1BD604A000105CD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F9B45811BD604A000105CD5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -51,6 +217,7 @@
 		4F9B459F1BD604A300105CD5 /* tactile.motion_v2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tactile.motion_v2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F9B45A31BD604A300105CD5 /* tactile_motion_v2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tactile_motion_v2UITests.swift; sourceTree = "<group>"; };
 		4F9B45A51BD604A300105CD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FB8CD571BE1AD58002AC6DF /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +225,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F977C0F1BDF74300038A342 /* libVVBasics.a in Frameworks */,
+				4F977C101BDF74300038A342 /* libVVOSC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +247,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F977BC61BDF737C0038A342 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F977BE21BDF737E0038A342 /* VVBasics.framework */,
+				4F977BE41BDF737E0038A342 /* VVBufferPool.framework */,
+				4F977BE61BDF737E0038A342 /* DDMathParser.framework */,
+				4F977BE81BDF737E0038A342 /* JSONKit.framework */,
+				4F977BEA1BDF737E0038A342 /* VVISFKit.framework */,
+				4F977BEC1BDF737E0038A342 /* VVUIToolbox.framework */,
+				4F977BEE1BDF737E0038A342 /* VVMIDI.framework */,
+				4F977BF01BDF737E0038A342 /* VVOSC.framework */,
+				4F977BF21BDF737E0038A342 /* CrashReporterTestApp.app */,
+				4F977BF41BDF737E0038A342 /* MIDITestApp.app */,
+				4F977BF61BDF737E0038A342 /* OSCTestApp.app */,
+				4F977BF81BDF737E0038A342 /* MIDIviaOSC.app */,
+				4F977BFA1BDF737E0038A342 /* OSCQueryTest.app */,
+				4F977BFC1BDF737E0038A342 /* OSCPingTester.app */,
+				4F977BFE1BDF737E0038A342 /* libVVBasics.a */,
+				4F977C001BDF737E0038A342 /* libVVOSC.a */,
+				4F977C021BDF737E0038A342 /* libVVUIToolbox.a */,
+				4F977C041BDF737E0038A342 /* GLScene Test App.app */,
+				4F977C061BDF737E0038A342 /* QCGLScene Test App.app */,
+				4F977C081BDF737E0038A342 /* CIGLScene Test App.app */,
+				4F977C0A1BDF737E0038A342 /* ISFGLScene Test App.app */,
+				4F977C0C1BDF737E0038A342 /* QT and Hap Test App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4F9B45731BD6049E00105CD5 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +283,7 @@
 				4F9B45971BD604A300105CD5 /* tactile.motion_v2Tests */,
 				4F9B45A21BD604A300105CD5 /* tactile.motion_v2UITests */,
 				4F9B457D1BD604A000105CD5 /* Products */,
+				4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +300,7 @@
 		4F9B457E1BD604A000105CD5 /* tactile.motion_v2 */ = {
 			isa = PBXGroup;
 			children = (
+				4FB8CD571BE1AD58002AC6DF /* SettingsViewController.swift */,
 				4F9B457F1BD604A000105CD5 /* AppDelegate.swift */,
 				4F9B45811BD604A000105CD5 /* GameScene.sks */,
 				4F9B45831BD604A000105CD5 /* GameScene.swift */,
@@ -109,6 +309,7 @@
 				4F9B458A1BD604A100105CD5 /* Assets.xcassets */,
 				4F9B458C1BD604A100105CD5 /* LaunchScreen.storyboard */,
 				4F9B458F1BD604A100105CD5 /* Info.plist */,
+				4F977C111BDF74ED0038A342 /* tactile.motion_v2-Bridging-Header.h */,
 			);
 			path = tactile.motion_v2;
 			sourceTree = "<group>";
@@ -145,6 +346,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4F977C0E1BDF74100038A342 /* PBXTargetDependency */,
 			);
 			name = tactile.motion_v2;
 			productName = tactile.motion_v2;
@@ -193,6 +395,7 @@
 		4F9B45741BD6049E00105CD5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = bdj;
 				TargetAttributes = {
@@ -220,6 +423,12 @@
 			mainGroup = 4F9B45731BD6049E00105CD5;
 			productRefGroup = 4F9B457D1BD604A000105CD5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4F977BC61BDF737C0038A342 /* Products */;
+					ProjectRef = 4F977BC51BDF737C0038A342 /* VVOpenSource.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4F9B457B1BD6049F00105CD5 /* tactile.motion_v2 */,
@@ -228,6 +437,163 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4F977BE21BDF737E0038A342 /* VVBasics.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VVBasics.framework;
+			remoteRef = 4F977BE11BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977BE41BDF737E0038A342 /* VVBufferPool.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VVBufferPool.framework;
+			remoteRef = 4F977BE31BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977BE61BDF737E0038A342 /* DDMathParser.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DDMathParser.framework;
+			remoteRef = 4F977BE51BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977BE81BDF737E0038A342 /* JSONKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONKit.framework;
+			remoteRef = 4F977BE71BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977BEA1BDF737E0038A342 /* VVISFKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VVISFKit.framework;
+			remoteRef = 4F977BE91BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977BEC1BDF737E0038A342 /* VVUIToolbox.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VVUIToolbox.framework;
+			remoteRef = 4F977BEB1BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977BEE1BDF737E0038A342 /* VVMIDI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VVMIDI.framework;
+			remoteRef = 4F977BED1BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977BF01BDF737E0038A342 /* VVOSC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VVOSC.framework;
+			remoteRef = 4F977BEF1BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977BF21BDF737E0038A342 /* CrashReporterTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CrashReporterTestApp.app;
+			remoteRef = 4F977BF11BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977BF41BDF737E0038A342 /* MIDITestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MIDITestApp.app;
+			remoteRef = 4F977BF31BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977BF61BDF737E0038A342 /* OSCTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OSCTestApp.app;
+			remoteRef = 4F977BF51BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977BF81BDF737E0038A342 /* MIDIviaOSC.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MIDIviaOSC.app;
+			remoteRef = 4F977BF71BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977BFA1BDF737E0038A342 /* OSCQueryTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OSCQueryTest.app;
+			remoteRef = 4F977BF91BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977BFC1BDF737E0038A342 /* OSCPingTester.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = OSCPingTester.app;
+			remoteRef = 4F977BFB1BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977BFE1BDF737E0038A342 /* libVVBasics.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libVVBasics.a;
+			remoteRef = 4F977BFD1BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977C001BDF737E0038A342 /* libVVOSC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libVVOSC.a;
+			remoteRef = 4F977BFF1BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977C021BDF737E0038A342 /* libVVUIToolbox.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libVVUIToolbox.a;
+			remoteRef = 4F977C011BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977C041BDF737E0038A342 /* GLScene Test App.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "GLScene Test App.app";
+			remoteRef = 4F977C031BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977C061BDF737E0038A342 /* QCGLScene Test App.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "QCGLScene Test App.app";
+			remoteRef = 4F977C051BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977C081BDF737E0038A342 /* CIGLScene Test App.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "CIGLScene Test App.app";
+			remoteRef = 4F977C071BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977C0A1BDF737E0038A342 /* ISFGLScene Test App.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "ISFGLScene Test App.app";
+			remoteRef = 4F977C091BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F977C0C1BDF737E0038A342 /* QT and Hap Test App.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "QT and Hap Test App.app";
+			remoteRef = 4F977C0B1BDF737E0038A342 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4F9B457A1BD6049F00105CD5 /* Resources */ = {
@@ -265,6 +631,7 @@
 				4F9B45841BD604A000105CD5 /* GameScene.swift in Sources */,
 				4F9B45861BD604A100105CD5 /* GameViewController.swift in Sources */,
 				4F9B45801BD604A000105CD5 /* AppDelegate.swift in Sources */,
+				4FB8CD581BE1AD58002AC6DF /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +654,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4F977C0E1BDF74100038A342 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Build iOS static libs";
+			targetProxy = 4F977C0D1BDF74100038A342 /* PBXContainerItemProxy */;
+		};
 		4F9B45961BD604A200105CD5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4F9B457B1BD6049F00105CD5 /* tactile.motion_v2 */;
@@ -406,11 +778,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = tactile.motion_v2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "\"-ObjC\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bridgetdjohnson.tactile-motion-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tactile.motion_v2/tactile.motion_v2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -418,11 +794,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = tactile.motion_v2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "\"-ObjC\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bridgetdjohnson.tactile-motion-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tactile.motion_v2/tactile.motion_v2-Bridging-Header.h";
 			};
 			name = Release;
 		};
