@@ -9,6 +9,15 @@
 import UIKit
 import SpriteKit
 
-class audioObject: SKSpriteNode {
+class audioObject: SKShapeNode {
+   required init?(coder aDecoder: NSCoder) {
+      fatalError("ohhhh shiiiiiiiiit")
+   }
+   
+   init(radius: CGFloat) {
+      
+      super.init()
+      path = CGPathCreateWithEllipseInRect(CGRect(origin: CGPointZero, size: CGSize(width: radius * 2, height: radius * 2)), nil)
 
+   }
 }

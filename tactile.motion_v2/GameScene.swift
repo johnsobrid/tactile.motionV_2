@@ -49,11 +49,11 @@ class GameScene: SKScene {
    func initObjects() {
       
       let boxWidth: Float = 125
-      let gapWidth: Float =  175
+      let gapWidth: Float =  180
     
       for i in 0...7 {
-         let object = SKShapeNode(circleOfRadius: 75)
-         object.position = CGPointMake(CGFloat(gapWidth * Float(i) + gapWidth), CGFloat(boxWidth))
+         let object: audioObject = audioObject(radius: 75)
+         object.position = CGPointMake(CGFloat(gapWidth * Float(i)+30), CGFloat(boxWidth*0.5))
          object.fillColor = colourPallete[i]
          object.strokeColor = SKColor.clearColor()
          let newString = "audioObject\(i)"

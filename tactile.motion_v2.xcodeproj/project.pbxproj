@@ -19,7 +19,7 @@
 		4F9B45991BD604A300105CD5 /* tactile_motion_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B45981BD604A300105CD5 /* tactile_motion_v2Tests.swift */; };
 		4F9B45A41BD604A300105CD5 /* tactile_motion_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9B45A31BD604A300105CD5 /* tactile_motion_v2UITests.swift */; };
 		4FB8CD581BE1AD58002AC6DF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8CD571BE1AD58002AC6DF /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		4FD123E91BE2F3DC0076CBBB /* audioObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD123E81BE2F3DC0076CBBB /* audioObject.swift */; settings = {ASSET_TAGS = (); }; };
+		4FD124041BE31FB20076CBBB /* audioObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD124031BE31FB20076CBBB /* audioObject.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,7 +219,7 @@
 		4F9B45A31BD604A300105CD5 /* tactile_motion_v2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tactile_motion_v2UITests.swift; sourceTree = "<group>"; };
 		4F9B45A51BD604A300105CD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FB8CD571BE1AD58002AC6DF /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
-		4FD123E81BE2F3DC0076CBBB /* audioObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = audioObject.swift; sourceTree = "<group>"; };
+		4FD124031BE31FB20076CBBB /* audioObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = audioObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,8 +305,8 @@
 				4FB8CD571BE1AD58002AC6DF /* SettingsViewController.swift */,
 				4F9B457F1BD604A000105CD5 /* AppDelegate.swift */,
 				4F9B45811BD604A000105CD5 /* GameScene.sks */,
+				4FD124031BE31FB20076CBBB /* audioObject.swift */,
 				4F9B45831BD604A000105CD5 /* GameScene.swift */,
-				4FD123E81BE2F3DC0076CBBB /* audioObject.swift */,
 				4F9B45851BD604A100105CD5 /* GameViewController.swift */,
 				4F9B45871BD604A100105CD5 /* Main.storyboard */,
 				4F9B458A1BD604A100105CD5 /* Assets.xcassets */,
@@ -631,7 +631,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FD123E91BE2F3DC0076CBBB /* audioObject.swift in Sources */,
+				4FD124041BE31FB20076CBBB /* audioObject.swift in Sources */,
 				4F9B45841BD604A000105CD5 /* GameScene.swift in Sources */,
 				4F9B45861BD604A100105CD5 /* GameViewController.swift in Sources */,
 				4F9B45801BD604A000105CD5 /* AppDelegate.swift in Sources */,
