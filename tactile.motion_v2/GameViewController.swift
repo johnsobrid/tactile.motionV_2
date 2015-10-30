@@ -52,5 +52,12 @@ class GameViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Release any cached data, images, etc that aren't in use.
     }
+   override func shouldAutorotate() -> Bool {
+      return false
+   }
+   override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+      return (UIInterfaceOrientationMask.Portrait)
+   }
+ 
 
 }
