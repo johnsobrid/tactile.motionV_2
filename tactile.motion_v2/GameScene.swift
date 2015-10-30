@@ -29,6 +29,8 @@ class GameScene: SKScene {
    var newManager = OSCManager()
    var newOutPort = OSCOutPort()
    var  colourPallete: [UIColor] = []
+   var objectArray: [SKShapeNode] = []
+   var objectActive: [Bool] = [false,false,false,false,false,false,false,false]
    
 
     override func didMoveToView(view: SKView) {
@@ -57,7 +59,7 @@ class GameScene: SKScene {
          let newString = "audioObject\(i)"
          object.name = newString
          addChild(object)
-        
+         objectArray.append(object)
       }
       
    }
@@ -83,9 +85,53 @@ class GameScene: SKScene {
    }
  
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+      let touch = touches.first! as UITouch
+      let touchLocation = touch.locationInNode(self)
+      let touchedNode = self.nodeAtPoint(touchLocation)
       
-      sendOSC()
+      if let name = touchedNode.name
+      {
+         for i in 0...7 {
+         let newString = "audioObject\(i)"
+            if name == newString {
+               objectActive[i] = true
+            }
+         }
+      }
+   }
+   
+   override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+      for i in 0...7 {
+         if objectActive[i] {
+            let touch = touches.first! as UITouch
+            let touchLoaction = touch.locationInNode(self)
+            let previousLocation = touch.previousLocationInNode(self)
+            
+            if let object = childNodeWithName("audioObject\(i)") as? SKShapeNode {
+               let objectX = object.position.x + (touchLoaction.x - previousLocation.x)
+               let objectY = object.position.y + (touchLoaction.y - previousLocation.y)
+               
+               object.position = CGPointMake(objectX, objectY)
+
+            }
+         }
+      }
+   }
+   
+   override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+      let touch = touches.first! as UITouch
+      let touchLocation = touch.locationInNode(self)
+      let touchedNode = self.nodeAtPoint(touchLocation)
       
+      if let name = touchedNode.name
+      {
+         for i in 0...7 {
+            let newString = "audioObject\(i)"
+            if name == newString {
+               objectActive[i] = false
+            }
+         }
+      }
    }
    
     override func update(currentTime: CFTimeInterval) {
