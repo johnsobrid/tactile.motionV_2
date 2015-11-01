@@ -11,7 +11,9 @@ import SpriteKit
 public var manualIP = String()
 public var manualPort = Int()
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
+   let objectCategory : UInt32 = 0x01 << 0
+   let controlAreaCategory : UInt32 = 0x01 << 1
    
    
    var manual_IP: String = "" {
@@ -30,7 +32,7 @@ class GameScene: SKScene {
    var newOutPort = OSCOutPort()
    var  colourPallete: [UIColor] = []
    var objectArray: [SKShapeNode] = []
-   var objectActive: [Bool] = [false,false,false,false,false,false,false,false]
+   var selectedObjects = [UITouch:SKShapeNode]()
    
 
     override func didMoveToView(view: SKView) {
@@ -40,6 +42,11 @@ class GameScene: SKScene {
       background.anchorPoint = CGPoint(x: 0.5, y: 0.5) // default
       background.zPosition = -1
       addChild(background)
+      
+      //set up physics
+      physicsWorld.gravity = CGVectorMake(0,-6.8)
+      physicsWorld.contactDelegate = self
+      
       
       newOutPort = newManager.createNewOutputToAddress(manualIP, atPort:Int32(manualPort), withLabel: "OutPort")
       makeObjectColour()
@@ -56,7 +63,7 @@ class GameScene: SKScene {
          object.position = CGPointMake(CGFloat(gapWidth * Float(i)+30), CGFloat(boxWidth*0.5))
          object.fillColor = colourPallete[i]
          object.strokeColor = SKColor.clearColor()
-         let newString = "audioObject\(i)"
+         let newString = "audioObject"
          object.name = newString
          addChild(object)
          objectArray.append(object)
@@ -85,51 +92,33 @@ class GameScene: SKScene {
    }
  
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-      let touch = touches.first! as UITouch
-      let touchLocation = touch.locationInNode(self)
-      let touchedNode = self.nodeAtPoint(touchLocation)
-      
-      if let name = touchedNode.name
-      {
-         for i in 0...7 {
-         let newString = "audioObject\(i)"
-            if name == newString {
-               objectActive[i] = true
+      for touch in touches {
+         let location = touch.locationInNode(self)
+         if let node = self.nodeAtPoint(location) as? SKShapeNode {
+            // Assumes sprites are named "sprite"
+            if (node.name == "audioObject") {
+               selectedObjects[touch] = node
             }
          }
       }
    }
    
    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-      for i in 0...7 {
-         if objectActive[i] {
-            let touch = touches.first! as UITouch
-            let touchLoaction = touch.locationInNode(self)
-            let previousLocation = touch.previousLocationInNode(self)
-            
-            if let object = childNodeWithName("audioObject\(i)") as? SKShapeNode {
-               let objectX = object.position.x + (touchLoaction.x - previousLocation.x)
-               let objectY = object.position.y + (touchLoaction.y - previousLocation.y)
-               
-               object.position = CGPointMake(objectX, objectY)
+      for touch in touches {
+         let location = touch.locationInNode(self)
+         // Update the position of the sprites
+         if let node = selectedObjects[touch] {
+            node.position.x = (location.x - (node.frame.size.width)/2)
+            node.position.y = (location.y - (node.frame.size.height)/2)
 
-            }
          }
       }
    }
    
    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-      let touch = touches.first! as UITouch
-      let touchLocation = touch.locationInNode(self)
-      let touchedNode = self.nodeAtPoint(touchLocation)
-      
-      if let name = touchedNode.name
-      {
-         for i in 0...7 {
-            let newString = "audioObject\(i)"
-            if name == newString {
-               objectActive[i] = false
-            }
+      for touch in touches {
+         if selectedObjects[touch] != nil {
+            selectedObjects[touch] = nil
          }
       }
    }
