@@ -36,6 +36,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
    
 
     override func didMoveToView(view: SKView) {
+      self.view?.multipleTouchEnabled = true
         /* Setup your scene here */
       let background =  SKSpriteNode(imageNamed: "background")
       background.position = CGPoint(x: size.width/2, y: size.height/2)
